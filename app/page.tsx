@@ -8,6 +8,7 @@ import Stars from "./components/stars";
 console.log("Bounce is:", Bounce);
 
 
+
 // Icon components
 const EmailIcon = () => (
   <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -144,11 +145,20 @@ export default function Home() {
     <Bounce src="/msftlogo.png" size={120} speed={2.2} />
     <Stars />
 
-<img
-  src ="/lofiboy.webp"
-  alt = "lofiboy"
-  className="fixed right-20 top-1/2 -translate-y-1/2 w-192 h-108 z-20 pointer-events-none mb-3 animate-fade-in"
-  />
+    <img
+  src="/lofiboy.webp"
+  alt="lofiboy"
+
+  className="
+    // mobile
+    relative block mx-auto w-64 h-auto mt-10 mb-10 
+    
+    // desktop
+    md:fixed md:right-20 md:top-1/2 md:-translate-y-1/2 md:w-192 md:h-108 md:mb-0
+    
+    z-20 pointer-events-none animate-fade-in
+  "
+/>
 
     <main className="flex min-h-screen flex-col items-center justify-center p-4 md:p-12 relative z-10">
       <div className="max-w-lg w-full space-y-1 md:space-y-2 mx-auto">
