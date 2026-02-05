@@ -150,8 +150,9 @@ export default function Home() {
   alt="lofiboy"
   className="
     hidden md:block
-    fixed right-12 top-1/2 -translate-y-1/2
-    w-[28rem] h-auto
+    fixed right-0 top-1/2 -translate-y-1/2
+    w-[22rem] lg:w-[26rem] xl:w-[32rem] 2xl:w-[38rem]
+    h-auto
     z-20 pointer-events-none animate-fade-in
   "
 />
