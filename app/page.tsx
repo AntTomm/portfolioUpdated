@@ -163,7 +163,7 @@ export default function Home() {
         {/* Header */}
         <div className="mb-1 animate-fade-in">
           <h1 className="text-xl sm:text-2xl md:text-3xl font-light text-white tracking-wide">
-            hi, im ant
+            hi, im ant!
           </h1>
         </div>
 
