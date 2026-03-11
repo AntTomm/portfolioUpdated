@@ -199,7 +199,7 @@ export default function Home() {
                     <ul>
                       <li>object-oriented programming (c++, python)</li>
                       <li>calculus 1-2, linear algebra</li>
-                      <li>automata, game engines</li>
+                      <li>automata, game engines, operating systems, comp arch 1 - 2</li>
                       <li>⠀</li>
                     </ul>
                     </div>
@@ -424,7 +424,7 @@ export default function Home() {
         {/* Latest Update */}
         <p className="text-[10px] text-stone-600 text-center mt-6 animate-fade-in delay-5">
           latest update{" "}
-          <a>2/2/26</a>
+          <a>3/11/26</a>
         </p>
       </div>
     </main>
