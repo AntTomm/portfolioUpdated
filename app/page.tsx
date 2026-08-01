@@ -53,11 +53,11 @@ const GitHubIcon = () => (
 //   </svg>
 // );
 
-const CppIcon = () => (
-  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-    <path d="M22.394 6c-.167-.29-.398-.543-.652-.69L12.926.22c-.509-.294-1.34-.294-1.848 0L2.26 5.31c-.508.293-.923 1.013-.923 1.6v10.18c0 .294.104.62.271.91.167.29.398.543.652.69l8.816 5.09c.508.293 1.34.293 1.848 0l8.816-5.09c.254-.147.485-.4.652-.69.167-.29.27-.616.27-.91V6.91c.003-.294-.1-.62-.268-.91zM12 19.11c-3.92 0-7.109-3.19-7.109-7.11 0-3.92 3.19-7.11 7.11-7.11a7.133 7.133 0 016.156 3.553l-3.076 1.78a3.567 3.567 0 00-3.08-1.78A3.56 3.56 0 008.444 12 3.56 3.56 0 0012 15.555a3.57 3.57 0 003.08-1.778l3.078 1.78A7.135 7.135 0 0112 19.11zm7.11-6.715h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79zm2.962 0h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79z"/>
-  </svg>
-);
+// const CppIcon = () => (
+//   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+//     <path d="M22.394 6c-.167-.29-.398-.543-.652-.69L12.926.22c-.509-.294-1.34-.294-1.848 0L2.26 5.31c-.508.293-.923 1.013-.923 1.6v10.18c0 .294.104.62.271.91.167.29.398.543.652.69l8.816 5.09c.508.293 1.34.293 1.848 0l8.816-5.09c.254-.147.485-.4.652-.69.167-.29.27-.616.27-.91V6.91c.003-.294-.1-.62-.268-.91zM12 19.11c-3.92 0-7.109-3.19-7.109-7.11 0-3.92 3.19-7.11 7.11-7.11a7.133 7.133 0 016.156 3.553l-3.076 1.78a3.567 3.567 0 00-3.08-1.78A3.56 3.56 0 008.444 12 3.56 3.56 0 0012 15.555a3.57 3.57 0 003.08-1.778l3.078 1.78A7.135 7.135 0 0112 19.11zm7.11-6.715h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79zm2.962 0h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79z"/>
+//   </svg>
+// );
 
 const PythonIcon = () => (
   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -82,6 +82,16 @@ const currSchool = [
 
 const currentPositions = [
   {
+    role: "software engineering intern - core data team",
+    company: "etsy",
+    logo: "/etsy.png",
+    alt: "etsy",
+    href: "https://www.etsy.com/",
+  }
+];
+
+const previousPositions = [
+  {
     role: "software engineering intern",
     company: "trance4mation games",
      logo: "/trance4mation.png",
@@ -98,15 +108,12 @@ const currentPositions = [
   },
 
   {
-    role: "ai/swe data intern",
+    role: "ai/swe data annotator intern",
     company: "snorkel.ai",
     logo: "/snorkel.avif",
     alt: "snorkel.ai",
     href: "https://snorkel.ai/",
-  }
-];
-
-const previousPositions = [
+  },
   {
     role: "software engineering intern",
     company: "stemkasa",
@@ -130,7 +137,7 @@ const projects = [
 ];
 
 const comingSoon = [
-  { name: "c++ game engine", icon: CppIcon },
+  { name: "IBM SDE Intern Fall 2026", href: "/ibm.png"},
 ];
 
 // const writing = [
@@ -144,18 +151,6 @@ export default function Home() {
     <>
     <Bounce src="/msftlogo.png" size={120} speed={2.2} />
     <Stars />
-
-    <img
-  src="/lofiboy.webp"
-  alt="lofiboy"
-  className="
-    hidden md:block
-    fixed right-0 top-1/2 -translate-y-1/2
-    w-[22rem] lg:w-[26rem] xl:w-[32rem] 2xl:w-[38rem]
-    h-auto
-    z-20 pointer-events-none animate-fade-in
-  "
-/>
 
 
     <main className="flex min-h-screen flex-col items-center justify-center p-4 md:p-12 relative z-10">
@@ -191,11 +186,11 @@ export default function Home() {
                   <span className="font-mono text-stone-500 group-hover:text-stone-300 transition-colors text-[13px]">
                     <div className="animate-fade-in delay-1">
                     <p>ba in cs & math with expected grad in may 2027</p>
-                    <p>deans list from fall '23 - fall '25</p>
+                    <p>deans list from fall &apos;23 - fall &apos;25</p>
                     <p>⠀</p>
                     <p> completed coursework in:</p>
                     <ul>
-                      <li>object-oriented programming (c++, python)</li>
+                      <li>object-oriented programming (c++, python), web dev (MERN stack) </li>
                       <li>calculus 1-2, linear algebra</li>
                       <li>automata, game engines, operating systems, comp arch 1 - 2</li>
                       <li>⠀</li>
@@ -328,7 +323,7 @@ export default function Home() {
 
             {/* Coming Soon */}
             <div className="animate-fade-in delay-3">
-              <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium tracking-widest uppercase">coming soon</p>
+              <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium tracking-widest uppercase">coming soon!</p>
               <div className="-mx-2 px-2">
                 <ul className="text-xs md:text-sm text-stone-400 space-y-1">
                   {comingSoon.map((comingSoon, index) => (
@@ -339,8 +334,12 @@ export default function Home() {
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 -mx-2 px-2 py-0.5 rounded-md transition-all duration-200 hover:bg-stone-800/80 hover:text-stone-100 hover:translate-x-0.5 font-mono text-stone-500 group-hover:text-stone-300 transition-colors text-[13px]"
                       >
-                        {comingSoon.icon && <comingSoon.icon />}
-                        {comingSoon.name}
+                        <span>{comingSoon.name}</span>
+                        {/* {comingSoon.icon && <comingSoon.icon />} */}
+                        <img
+                          src={comingSoon.href}
+                          alt={`${comingSoon.name} logo`}
+                          className="h-4 w-4 object-contain"/>
                       </a>
                     </li>
                   ))}
@@ -422,7 +421,7 @@ export default function Home() {
         {/* Latest Update */}
         <p className="text-[10px] text-stone-600 text-center mt-6 animate-fade-in delay-5">
           latest update{" "}
-          <a>3/11/26</a>
+          <a>8/1/26</a>
         </p>
       </div>
     </main>
